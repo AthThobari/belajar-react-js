@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TodoInput from "../components/TodoInput";
-// import TodoList from "./components/TodoList"; 
+import TodoList from "../components/TodoList";
 
 export interface Todo {
 id: number;
@@ -38,8 +38,8 @@ return(
 <div style={{padding: "20px"}}>
 <h2>Todo List (Component)</h2>
 <TodoInput onAdd={addTodo} />
-{/*<TodoList todos={todos} onToggle={toggleTodo} 
-onDelete={deleteTodo} />*/}
+<TodoList todos={todos} onToggle={toggleTodo} 
+onDelete={deleteTodo} />
 </div>
 )
 }
